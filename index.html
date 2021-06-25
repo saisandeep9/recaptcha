@@ -25,10 +25,12 @@
     
       };
         
-        
+             var verifyCallback = function(response) {
+        alert(response);
+      };
         
                  grecaptcha.render('example3', {
-          'sitekey' : 'your_site_key',
+          'sitekey' : '6LfyLhsbAAAAANozFN9HmwZlhVWmyGiiDmF7_7gC',
           'callback' : verifyCallback,
           'theme' : 'dark'
         });
