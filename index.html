@@ -6,24 +6,7 @@
         async defer>
 </script>
     <script>
-        document.getElementById("my_captcha_form").addEventListener("submit", function (evt) {
 
-            var response = grecaptcha.getResponse();
-            if (response.length == 0) {
-                //reCaptcha not verified
-                alert("please verify you are humann!");
-                evt.preventDefault();
-                console.log("test1")
-                return false;
-            }
-                console.log("test2")
-            //captcha verified
-            //do the rest of your validations here
-
-        });
-     
-    
-      };
         
              var verifyCallback = function(response) {
         alert(response);
