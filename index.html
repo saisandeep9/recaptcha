@@ -2,7 +2,8 @@
 
 <head>
     <title>reCaptcha validation demo</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
 
     <script>
         document.getElementById("my_captcha_form").addEventListener("submit", function (evt) {
@@ -38,9 +39,9 @@
                 <button type="submit">Submit</button>
             </p> 
         </form> -->
-                   <div class="g-recaptcha" 
+<!--                    <div class="g-recaptcha" 
                 style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0; display:flex;" data-sitekey="
-                6LfyLhsbAAAAANozFN9HmwZlhVWmyGiiDmF7_7gC"></div>
+                6LfyLhsbAAAAANozFN9HmwZlhVWmyGiiDmF7_7gC"></div> -->
     </div>
 </body>
 
