@@ -2,7 +2,7 @@
 
 <head>
     <title>reCaptcha validation demo</title>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <script>
         document.getElementById("my_captcha_form").addEventListener("submit", function (evt) {
@@ -22,26 +22,52 @@
         });
     </script>
     
-
+    <style>
+    
+    
+    .from-them{
+    position: relative;
+    float: left;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-right: 20px;
+    -webkit-font-smoothing: antialiased;
+    min-height: 20px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    color: rgb(38, 50, 56);
+    background: rgb(255 255 255);
+    border: 0px solid rgb(255 255 255);
+    display: -webkit-box;
+    padding: 8px 14px;
+    border-radius: 0px;
+    line-height: 19px;
+    min-width: 30px;
+    word-break: break-word;
+}
+        </style>
 </head>
 
 
-<body style="background-color:#ffffff;">
-    <div    style="display:flex;
-                   margin-top: 50px;
-           justify-content: center;
+<body calss="from-them" style="background-color:#ffffff;">
+    <div class="form_container" style="style=display:flex;
+          margin-top: 50px;
+                                       
+          justify-content: center;
           align-items: center;">
-        <form action="#" id="my_captcha_form">
-            <div class="g-recaptcha" data-sitekey="6LfyLhsbAAAAANozFN9HmwZlhVWmyGiiDmF7_7gC" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0; display:flex;"></div>
+<!--         <form action="#" id="my_captcha_form">
+            <div class="g-recaptcha" data-sitekey="6LfyLhsbAAAAANozFN9HmwZlhVWmyGiiDmF7_7gC"></div>
     <p>
-<!--                 <button type="submit">Submit</button> -->
+                <button type="submit">Submit</button>
             </p> 
-        </form>
-
+        </form> -->
+                   <div class="g-recaptcha" 
+                style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0; display:flex;" data-sitekey="
+                6LfyLhsbAAAAANozFN9HmwZlhVWmyGiiDmF7_7gC"></div>
     </div>
 </body>
 
 </html>
-
-
-
